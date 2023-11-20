@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 0%, 100%);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;     
+}
+.container{
+    background-color: hsl(244, 38%, 16%);
+    background-image: url("images/image-header-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size:50%;
+}
+.container .row .coluna1{
+    width: 25%;
+}
