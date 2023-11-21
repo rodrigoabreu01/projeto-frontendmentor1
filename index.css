@@ -7,6 +7,7 @@
 }
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -15,24 +16,28 @@ body{
     font-family: 'Poppins', sans-serif;     
 }
 .container-md{
-    background-color: hsl(244, 38%, 16%);
-}
-
-.coluna-imagem{
     background-image: url("images/image-header-desktop.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 50% 100%;
+    background-position: right;
+    background-color: hsl(244, 38%, 16%);
     position: relative;
-    width: 52%;
 }
 
 
-.coluna-imagem::before{
+
+
+.container-md::before{
     content: "";
     background-color: hsla(310, 73%, 46%, 0.6);
-    width: 100%;
+    width: 50%;
     height: 100%;
-    left: 0;
+    left: 50%;
+    border-radius: 0px 8px 8px 0px;
     position: absolute;
+}
+
+footer{
+    bottom: 0;
 }
 
