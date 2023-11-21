@@ -14,39 +14,25 @@ body{
     font-family: 'Inter', sans-serif;
     font-family: 'Poppins', sans-serif;     
 }
-.container{
+.container-md{
     background-color: hsl(244, 38%, 16%);
 }
-.container .row .coluna1{
-    width: 25%;
-}
+
 .coluna-imagem{
     background-image: url("images/image-header-desktop.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
+    position: relative;
+    width: 52%;
 }
 
-/*  
-@media screen and (max-width: 425px) {
-    .body{
-               background-image: url("images/image-header-mobile.jpg");
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    .container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-    }
-    .container .row .coluna1{
-        margin-top: 50%;
-        width: 100%;
-        height: 100vh;
-    }
-    .coluna-imagem{
-        display: none;
-    }
+
+.coluna-imagem::before{
+    content: "";
+    background-color: hsla(310, 73%, 46%, 0.6);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
 }
 
