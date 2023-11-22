@@ -23,6 +23,9 @@ body{
     background-color: hsl(244, 38%, 16%);
     position: relative;
 }
+.container-md .linha1{
+    display: none;
+}
 
 
 
@@ -39,5 +42,45 @@ body{
 
 footer{
     bottom: 0;
+}
+
+@media screen and (max-width: 425px) {
+    .container-md::before{
+        display: none;
+    }
+    body{
+        padding: 20px 20px 20px 20px;
+        display: block;
+
+    }  
+    .container-md{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        background-image: none;
+    }
+    .container-md .linha1{
+        display: block;
+        padding: 0;
+    }
+    .container-md .linha1 img{
+        padding: 0;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .container-md .linha1 img::before{
+        content: "";
+        background-color: hsla(310, 73%, 46%, 0.6);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .container-md .row .col .ultima-row{
+        display: block;
+        margin-top: 0;
+    }
+    footer{
+        display: none;
+    }
 }
 
