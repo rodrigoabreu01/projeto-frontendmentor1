@@ -67,13 +67,17 @@ footer{
     .container-md .linha1 img{
         padding: 0;
         border-radius: 15px 15px 0px 0px;
+        position: relative;
     }
-    .container-md .linha1 img::before{
+    .container-md .linha1::after{
         content: "";
         background-color: hsla(310, 73%, 46%, 0.6);
         width: 100%;
-        height: 100%;
+        top: 0;
+        left: 0;
+        height: 28%;
         position: absolute;
+        border-radius: 15px 15px 0px 0px;
     }
     .container-md .row .col .ultima-row{
         display: block;
