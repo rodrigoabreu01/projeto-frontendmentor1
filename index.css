@@ -51,7 +51,7 @@ footer{
     body{
         padding: 20px 20px 20px 20px;
         display: block;
-
+        height: 100vh;
     }  
     .container-md{
         display: flex;
@@ -59,6 +59,7 @@ footer{
         flex-direction: column;
         text-align: center;
         background-image: none;
+        margin-bottom: 50px;
     }
     .container-md .linha1{
         display: block;
